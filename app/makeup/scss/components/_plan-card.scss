@@ -1,0 +1,48 @@
+.plan {
+    font-family: $secondFontFamily;
+    max-width: 300px;
+    margin: auto;
+    &-title {
+        text-transform: uppercase;
+        font-family: $primaryFontFamily;
+        font-weight: $mediumFont;
+        font-size: 20px;
+        padding: 10px;
+        color: $white;
+        background-color: $gray500;
+        
+    }
+    &-price {
+        background-color: $gray200;
+        padding: 15px;
+        transition: background-color .5s, color .5s;
+    }
+    &-number {
+        font-family: $secondFontFamily;
+        font-size: 50px;
+        font-weight: $blackFont;
+    }
+    &-small-word {
+        padding: 5px;
+    }
+    &-list {
+        border: 1px solid $gray200;
+    }
+    &-item {
+        padding: 15px;
+        border-top: 1px solid $gray200;
+        .button {
+            width: 100%;
+        }
+    }
+    &:hover {
+        .plan-price {
+            color: $white;
+            background-color: $liteRed;
+        }
+        .button {
+            background-color: $liteRed;
+        }
+    }
+}
+  

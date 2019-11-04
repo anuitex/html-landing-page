@@ -1,0 +1,26 @@
+@keyframes trembling {
+	0% {
+    transform: translateX(-100%);
+	}
+	40% {
+		transform: translateX(30%);
+	}
+	50% {
+		transform: translateX(-20%);
+	}
+	68% {
+		transform: translateX(8%);
+	}
+	78% {
+    transform: translateX(-5%);
+	}
+	88% {
+    transform: translateX(3%);
+	}
+	95% {
+    transform: translateX(-1%);
+	}
+	100% {
+    transform: translateX(0%);
+	}
+}

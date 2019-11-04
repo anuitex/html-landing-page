@@ -1,0 +1,80 @@
+.card {
+  border: 1px solid $gray200;
+  max-width: 500px;
+  margin: auto;
+  transition: border .5s;
+  &-img {
+    position: relative;
+    img {
+      width: 100%;
+    }
+  }
+  &-social {
+    background-color: $gray500;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    transition: bottom .5s;
+    perspective: 1000px;
+  }
+  &-link {
+    display: block;
+    width: 47px;
+    height: 40px;
+    margin: 0 5px;
+    line-height: 43px;
+    background-color: $white;
+    color: $liteRed;
+    clip-path: $hexagon;
+    &:first-child {
+      transform: translateX(-500%);
+      transition: transform .8s ease-out;
+    }
+    &:nth-child(2) {
+      transform: translateY(-500%);
+      transition: transform .8s ease-out .4s;
+    }
+    &:last-child {
+      opacity: 0;
+      transform-origin: bottom;
+      transform: rotateX(90deg);
+      transition: transform .8s ease-out 1s, opacity 0s linear 1s;
+    }
+  }
+  &-description {
+    padding: 30px 10px;
+    background-color: $white;
+  }
+  &-title {
+    font-size: 20px;
+    font-weight: $mediumFont;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    transition: color .5s;
+  }
+  &-subtitle {
+    font-family: $secondFontFamily;
+    font-size: 16px;
+    color: $gray400;
+  }
+  &:hover {
+    border: 1px solid $gray500;
+    .card-social {
+      bottom: 0;
+    }
+    .card-title {
+      color: $liteRed;
+    }
+    .card-link {
+      transform: none;
+      opacity: 1;
+    }
+  }
+}
+

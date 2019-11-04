@@ -1,0 +1,33 @@
+.section-twitter {
+    position: relative;
+    text-align: center;
+    font-family: $secondFontFamily;
+    color: $white;
+    line-height: 22px;
+    background-color: $gray500;
+    .wrap-twitter {
+        overflow: hidden;
+        padding: 100px 15px;        
+        .bg-img {
+            color: $white;
+            opacity: .1;
+            position: absolute;
+            top: 30%;
+            left: 3%;
+            transform: rotate(-25deg);
+            font-size: 206px;
+        }
+    }
+    .container-twitter {
+        max-width: 650px;
+        margin: auto;
+        .icon-twitter-icon {
+            font-size: 30px;
+            color: $liteRed;
+            display: block;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+  

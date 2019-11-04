@@ -1,0 +1,29 @@
+.footer {
+    position: relative;
+    padding: 20px;
+    background-color: $gray500;
+    text-align: center;
+    color: $gray300;
+    &-logo {
+        font-family: $extraFontFamily;
+        text-transform: capitalize;
+        font-size: 25px;
+        letter-spacing: 3px;
+        @media (max-width: 576px) {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+    .design {
+        opacity: .8;
+        position: absolute;
+        right: 5%;
+        bottom: 22px;
+        @media (max-width: 576px) {
+            position: static;
+            display: block;
+        }
+    }
+}
+
+  

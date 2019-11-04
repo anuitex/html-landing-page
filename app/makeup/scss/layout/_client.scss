@@ -1,0 +1,49 @@
+.section-client {
+    background: url('../img/business-group.jpg') center / cover no-repeat;
+    position: relative;
+    color: $white;
+    .subtitle {
+        color: $gray300;
+    }
+}
+.content-client {
+    position: relative;
+    width: 100%;
+}
+.brand {
+    margin-left: auto;
+    max-width: 570px;
+    display: grid;
+    grid-template-columns: 270px 270px;
+    grid-auto-rows: 116px;
+    grid-gap: 40px 30px;
+    @media (max-width: 1200px) {
+        margin-right: auto;
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 80px;
+        grid-gap: 20px;
+    }
+    .brand-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $extraFontFamily;
+        font-size: 25px;
+        color: $gray500;
+        background-color: $white;
+        box-shadow: $boxShadow;
+        .brand-title {
+            padding-left: 5px;
+        }  
+    }
+    .correct-position {
+        position: relative;
+        top: 10px;
+    }
+}

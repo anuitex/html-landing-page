@@ -1,0 +1,51 @@
+//variables
+@import './utils/vars';
+
+//sprite
+@import './utils/sprite';
+
+//vendors
+@import './vendors/sick-slider/slick';
+@import './vendors/sick-slider/slick-theme';
+
+//base
+@import './base/fonts';
+@import './base/fonts-icons';
+@import './base/reset';
+
+//mixins
+@import './utils/mixins';
+
+//animation
+@import './utils/animation';
+
+//helpers
+@import './utils/helpers';
+
+//components
+@import './components/nav';
+@import './components/button';
+@import './components/slider-main';
+@import './components/accordion';
+@import './components/advantage';
+@import './components/slider-client';
+@import './components/card';
+@import './components/plan-card';
+@import './components/blog';
+@import './components/form';
+@import './components/footer';
+
+//layouts
+@import './layout/section';
+@import './layout/header';
+@import './layout/about';
+@import './layout/portfolio';
+@import './layout/product';
+@import './layout/client';
+@import './layout/teamwork';
+@import './layout/skills';
+@import './layout/services';
+@import './layout/plans';
+@import './layout/twitter-section';
+@import './layout/creativity';
+@import './layout/contact';

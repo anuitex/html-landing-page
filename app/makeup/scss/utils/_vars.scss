@@ -1,0 +1,40 @@
+//color
+$white:           #ffffff;
+$black:           #000000;
+$blue:            #0000ff;
+$yellow:          #fed400;
+$liteBlack:       #131313;
+$liteRed:         #ff0036;
+
+$gray100:         #f7f7f7;
+$gray200:         #e7e7e7;
+$gray300:         #a4a4a4;
+$gray400:         #505050;
+$gray500:         #262626;
+
+//outline color
+$outlineColor:    #4D90FE;
+
+//box-shadow
+$boxShadow: inset 0px 0px 68px 0px rgba(0, 0, 0, 0.75);
+
+//font-weight
+$thinFont:        100;
+$extraLightFont:  200;
+$lightFont:       300;
+$regularFont:     400;
+$mediumFont:      500;
+$semiBoldFont:    600;
+$boldFont:        700;
+$extraBoldFont:   800;
+$blackFont:       900;
+
+//font-family
+$primaryFontFamily: 'Raleway', sans-serif;
+$secondFontFamily: 'Lato', sans-serif;
+$extraFontFamily: 'MgOpen Modata', sans-serif;
+
+//figure
+$octagonHalfDown: polygon(100% 0, 100% 45%, 75% 100%, 25% 100%, 0 50%, 0 0);
+$hexagon: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+$hexagonHalfDown: polygon(100% 50%,75% 100%,25% 100%,0 50%);

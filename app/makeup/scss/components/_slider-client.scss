@@ -1,0 +1,73 @@
+.slider-client {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 15px;
+    @media (max-width: 1200px) {
+        width: auto;
+        max-width: 570px;
+        padding: 0;
+        position: static;
+        margin: auto;
+    }
+    .slick-list {
+        margin-bottom: 10px;
+    }
+}
+.client-slider-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+        @include button-clear;
+        cursor: pointer;
+        background-color: $white;
+        font-size: 0;
+        opacity: .9;
+        padding: 4px;
+        margin: 0 3px;
+        &:hover {
+            opacity: .5;
+        }
+    }
+    .slick-active {
+        button {
+            background-color: $liteRed;
+            &:hover {
+                opacity: .5;
+            }
+        }
+    }
+}
+.client-title {
+    text-transform: uppercase;
+    font-weight: $mediumFont;
+    font-size: 20px;
+    margin-bottom: 45px;
+    @media (max-width: 1200px) {
+        margin-bottom: 20px;
+    }
+}
+.client-message {
+    font-family: $secondFontFamily;
+    color: $gray300;
+    line-height: 22px;
+    margin-bottom: 45px;
+    @media (max-width: 1200px) {
+        margin-bottom: 20px;
+    }
+}
+.client-avatar {
+    max-width: 67px;
+    margin: 0 auto 15px;
+    img {
+        width: 100%;
+        clip-path: $hexagon;
+    }
+}
+.client-name {
+    text-transform: uppercase;
+    font-weight: $boldFont;
+    color: $liteRed;
+}

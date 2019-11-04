@@ -1,0 +1,60 @@
+.section-creativity {
+    background: url('../img/woman-in-red-bg.jpg') center / cover no-repeat;
+    color: $white;
+}
+.content-creativity {
+    display: flex;
+    justify-content: center;
+    @media (max-width: 576px) {
+        display: block;
+    }
+    .content-half {
+        display: flex;
+        justify-content: center;
+        @media (max-width: 576px) {
+            margin-bottom: 25px;
+        }
+    }
+}
+.social-network {
+    display: block;
+    margin: 0 25px;
+    @media (max-width: 576px) {
+        margin: 0 20px 20px;
+    }
+    .hex {
+        position: relative;
+        color: $liteRed;
+        margin-bottom: 10px;
+        transition: color .5s;
+        @media (min-width: 576px) {
+            margin-bottom: 25px;
+        }
+    }
+    .hex-border {
+        fill: transparent;
+        stroke: $liteRed;
+        transition: fill .5s;
+    }
+    [class^=icon-] {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+    }
+    .counter {
+        font-family: $secondFontFamily;
+    }
+    &:hover {
+        color: $white;
+        text-decoration: none;
+        .hex {
+            color: $white;
+        }
+        .hex-border {
+            fill: $liteRed;
+        }
+    }
+}
+    

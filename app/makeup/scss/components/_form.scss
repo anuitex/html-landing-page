@@ -1,0 +1,43 @@
+.form-contact {
+    text-align: left;
+    color: $gray400;
+    max-width: 470px;
+    padding: 45px 30px;
+    background-color: $white;
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
+    .form-title {
+        font-size: 20px;
+        font-weight: $mediumFont;
+        margin-bottom: 45px;
+        text-transform: uppercase;
+        @media (max-width: 768px) {
+            margin-bottom: 15px;
+        }
+    }
+    input,
+    textarea {
+        width: 100%;
+        margin-bottom: 16px;
+        border: 1px solid $gray200;
+        padding: 6px 15px;
+    }
+    textarea {
+        height: 90px;
+        resize: none;
+    }
+    .actions {
+        text-align: right;
+        .button {
+            width: 120px;
+            font-family: $secondFontFamily;
+            font-size: 16px;
+            padding: 10px;
+            @media (max-width: 576px) {
+                width: 100%;
+            }
+        }
+    }
+}
+  

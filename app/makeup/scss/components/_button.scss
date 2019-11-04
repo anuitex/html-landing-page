@@ -1,0 +1,18 @@
+.button {
+    @include button-clear;
+
+    cursor: pointer;
+    width: 170px;
+    padding: 15px 10px;
+    text-transform: uppercase;
+    font-family: $primaryFontFamily;
+    font-size: 20px;
+    font-weight: $mediumFont;
+    color: $white;
+    background-color: $liteBlack;
+    transition: background-color .5s;
+    &:hover,
+    &:focus {
+        background-color: $liteRed;
+    }
+}

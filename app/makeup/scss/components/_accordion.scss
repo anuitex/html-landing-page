@@ -1,0 +1,59 @@
+
+.accordion {
+    text-align: left;
+    .tab {
+        position: relative;
+        margin-bottom: 10px;
+        border: 1px solid $gray200;
+        &.open {       
+            .tab-title {
+                color: $liteRed; 
+            } 
+            .icon-tab-open {
+                color: $liteRed;
+            }
+            .icon-tab-closed {
+                opacity: 0;
+            }
+        }
+        &-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 100%;
+            border-right: 1px solid $gray200;
+        }
+        &-header {
+            cursor: pointer;
+            position: relative;
+            background-color: $gray100;  
+            border-bottom: 1px solid $gray200;
+            padding: 15px 15px 15px 95px;
+            .icon-tab-closed,
+            .icon-tab-open {
+                position: absolute;
+                top: 50%;
+                left: 30px;
+                transform: translate(-50%, -50%);
+                font-size: 20px;
+                transition: color .5s, opacity .5s;
+            }  
+        }
+        &-title {
+            font-weight: $mediumFont;
+            font-size: 20px;
+            color: $gray500;
+            transition: color .5s;
+        }
+        &-body {
+            padding: 15px;
+        }
+        &-text {
+            font-size: 14px;
+            line-height: 22px;
+            color: $gray400;
+        }
+    }
+}
+  

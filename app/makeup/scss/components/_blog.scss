@@ -1,0 +1,87 @@
+.blog {
+  font-family: $secondFontFamily;
+  text-align: left;
+  display: grid;
+  grid-template-columns: minmax(100px, 370px) minmax(370px, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 50px;
+  @media (max-width: 768px) {
+    grid-template-columns: minmax(100px, 500px);
+    justify-content: center;
+  }
+  @media (max-width: 576px) {
+    text-align: center;
+  }
+  &-img {
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba($white, 0);
+      transition: background-color .5s;
+    }
+    &:hover::after {
+      background-color: rgba($white, .5);
+    }
+  }
+  &-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &-title {
+    font-family: $primaryFontFamily;
+    font-weight: $mediumFont;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  &-info {
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: $gray300;
+    [class^=blog-] {
+      padding-right: 10px;
+    }
+  }
+  &-text {
+    color: $gray400;
+    margin-bottom: 25px;
+  }
+  .button {
+    font-family: $secondFontFamily;
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+  }
+}
+.view-more {
+  @include button-clear;
+  cursor: pointer;
+  padding-left: 2px;
+  width: 45px;
+  height: 45px;
+  background-color: $gray100;
+  color: $gray300;
+  border-radius: 50%;
+  font-size: 30px;
+  line-height: 55px;
+  transition: background-color .5s, color .5s;
+  span {
+    display: inline-block;
+    transform: rotate(-90deg);
+  }
+  &:hover,
+  &:focus {
+    background-color: $gray200;
+    color: $gray400
+  }
+}

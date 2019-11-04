@@ -1,0 +1,55 @@
+.section-header {
+    border-top: 3px solid $gray500;
+    background-color: rgba($black, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1100;
+    padding: 0 15px;
+}
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px 0;
+    position: relative;
+    .logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 253px;
+        height: 106px;
+        background-color: $liteRed;
+        clip-path: $octagonHalfDown;
+        color: $white;
+        text-align: center;
+        text-transform: capitalize;
+        font-family: $extraFontFamily;
+        font-size: 25px;
+        letter-spacing: 3px;
+        @media (max-width: 576px) {
+            font-size: 18px;
+            width: 150px;
+            height: 60px;
+        }
+        a {
+            display: block;
+            position: relative;
+            top: 0;
+            left: 2px;
+            width: 249px;
+            height: 104px;
+            padding-top: 30px;
+            background-color: $liteBlack;
+            clip-path: $octagonHalfDown;
+            @media (max-width: 576px) {
+                left: 1px;
+                padding-top: 18px;
+                width: 148px;
+                height: 59px;
+            }
+        }
+    }
+}
+
+  
